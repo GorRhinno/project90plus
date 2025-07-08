@@ -1,4 +1,3 @@
-from pathlib import Path
 import json
 
 def main():
@@ -8,7 +7,7 @@ def main():
         for elem in data:
             if elem["age"] > 25:
                 print(f"{elem["name"]} : {elem["age"]}")
-                
+
 if __name__ == "__main__":
     main()
 
