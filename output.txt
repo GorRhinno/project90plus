@@ -1,8 +1,0 @@
-clever: 2
-quick: 1
-brown: 1
-jumps: 1
-over: 1
-lazy: 1
-amused: 1
-very: 1
