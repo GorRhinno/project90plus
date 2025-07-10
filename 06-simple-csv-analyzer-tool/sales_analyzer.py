@@ -27,12 +27,12 @@ def csv_analyzer(path: str) -> list[dict]:
         best_customer = max(revenue_by_customer.items(), key=lambda x: x[1])[0]
 
         with open("analyzed_sales.txt", "w", encoding="utf-8") as result:
-            log_result(f"Общее количество заказов: {order_quantity}", result )
-            log_result(f"Общая выручка: {total_revenue}", result)
-            log_result("Сколько заказов сделал каждый клиент:", result)
+            log_result(f"Total quantity of orders: {order_quantity}", result )
+            log_result(f"Total revenue: {total_revenue}", result)
+            log_result("Quantity of orders for each customer", result)
             for name, qty in customer_counts.items():
                 log_result(f"{name}: {qty}", result)
-            log_result(f"Самый популярный товар: {most_popular_product}", result)
-            log_result(f"Какой клиент принёс больше всего денег: {best_customer}", result)
+            log_result(f"Most common product: {most_popular_product}", result)
+            log_result(f"Top revenue-generating customer: {best_customer}", result)
 if __name__ == "__main__":
     csv_analyzer("sales.csv")
